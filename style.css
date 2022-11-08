@@ -10,6 +10,7 @@
   --card-bg-color: #1d1c19;
   --bg: url(./assets/bg-yellow.svg);
 }
+
 body.blue {
   --card-title-border-color: #338af3;
   --card-color-primary: #338af3;
@@ -29,12 +30,6 @@ ul {
 }
 
 body {
-  /* background-color: #121214;
-  background-image: var(--bg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
-
   background: #121214 var(--bg) no-repeat top center/cover;
 }
 
@@ -44,7 +39,8 @@ body * {
 
 #app {
   width: fit-content;
-  margin: 52px auto;
+  margin: auto;
+  padding-top: 52px;
 }
 
 header {
@@ -131,7 +127,7 @@ header {
 
 .card {
   opacity: 0;
-  animation: appear 2s forwards;
+  animation: appear 0.2s forwards;
 }
 
 @keyframes appear {
